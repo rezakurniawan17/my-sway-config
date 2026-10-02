@@ -1,0 +1,12 @@
+configuration {
+    modes: [ drun, run, window ];
+    font: "JetBrainsMono NF 11";
+    show-icons: true;
+    icon-theme: "Papirus-Dark"; /* Ubah sesuai icon pack Anda */
+    drun-display-format: "{name}";
+    disable-history: false;
+    sidebar-mode: false;
+}
+
+@theme "ayu"
+

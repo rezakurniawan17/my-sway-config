@@ -1,0 +1,94 @@
+/* ~/.config/rofi/ayu.rasi */
+
+* {
+    /* Palet Warna Ayu Dark / Mirage */
+    bg:          #0f1419;
+    bg-alt:      #14191f;
+    fg:          #e6b450;
+    fg-alt:      #b3b1ad;
+    accent:      #bbbbbb;
+    urgent:      #f07178;
+    active:      #39bae6;
+
+    background-color:   transparent;
+    text-color:         @fg-alt;
+    margin:             0;
+    padding:            0;
+    spacing:            0;
+}
+
+window {
+    location:           center;
+    anchor:             center;
+    fullscreen:         false;
+    width:              480px;
+    background-color:   @bg;
+    border:             2px;
+    border-color:       @accent;
+    border-radius:      8px;
+}
+
+mainbox {
+    padding:            24px;
+    children:           [ inputbar, listview ];
+}
+
+inputbar {
+    background-color:   @bg-alt;
+    border-radius:      6px;
+    padding:            12px;
+    margin:             0 0 16px 0;
+    children:           [ prompt, entry ];
+}
+
+prompt {
+    text-color:         @accent;
+    font:               "JetBrainsMono NF Bold 12";
+    margin:             0 8px 0 0;
+}
+
+entry {
+    text-color:         @fg;
+    font:               "JetBrainsMono NF 12";
+    placeholder:        "Cari aplikasi...";
+    placeholder-color:  #5c6773;
+}
+
+listview {
+    lines:              8;
+    columns:            1;
+    fixed-height:       true;
+}
+
+element {
+    padding:            10px;
+    border-radius:      6px;
+    cursor:             pointer;
+}
+
+element normal.normal {
+    background-color:   transparent;
+    text-color:         @fg-alt;
+}
+
+element alternate.normal {
+    background-color:   transparent;
+    text-color:         @fg-alt;
+}
+
+element selected.normal {
+    background-color:   @bg-alt;
+    text-color:         @accent;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         inherit;
+    vertical-align:     0.5;
+}
+
+element-icon {
+    size:               24px;
+    margin:             0 12px 0 0;
+}
+
